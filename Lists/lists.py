@@ -16,3 +16,8 @@ print (bicycles[-1])
 
 bicycles.append('Ashutosh')
 print(bicycles)
+
+bicycles.insert(2, 'ABC')
+print(bicycles)
+
+print (bicycles.index('Akshit'))

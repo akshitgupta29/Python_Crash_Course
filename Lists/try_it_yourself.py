@@ -11,3 +11,5 @@ for name in names:
 #3.2 
 for name in names:
     print(f"Hello {name}")
+
+# 3.3 
