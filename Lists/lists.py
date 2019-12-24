@@ -2,7 +2,7 @@
 #author: akshitgupta29
 
 #Displays all the elements including the square bracket
-bicycles = ['Akshit', 'Abhinav', 'Manju', 'Pardeep']
+bicycles = ['Akshit', 'Abhinav', 'Manju', 'Pardeep', 'ABC']
 print (bicycles)
 
 #Only first element without square bracket
@@ -21,3 +21,52 @@ bicycles.insert(2, 'ABC')
 print(bicycles)
 
 print (bicycles.index('Akshit'))
+
+#use of delete keyword (del) for deleting any element from the list
+del bicycles[2]
+print (bicycles)
+
+popped = bicycles.pop()
+print (popped)
+
+removed = 'ABC'
+bicycles.remove(removed)
+print (f"{removed} is not needed")
+
+# Sorting of the lists
+# 1. Permanently using the sort command i.e. list.sort(). The sort() method, shown at ➊, changes the order of the list permanently. The cars are now in alphabetical order, and we can never revert to the original order:
+
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print (cars)
+cars.sort()
+print (cars)
+cars.sort(reverse=True)
+print (cars)
+
+
+# 2. Displaying temporarily through the sorted function. To maintain the original order of a list but present it in a sorted order, you can use the sorted() function. The sorted() function lets you display your list in a particular order but doesn’t affect the actual order of the list.
+
+print ("temporarily Sorting")
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print (cars)
+print (sorted(cars))
+print (cars)
+print (sorted(cars, reverse=True))
+
+#Printing a List in Reverse Order
+#To reverse the original order of a list, you can use the reverse() method. 
+print (cars)
+cars.reverse()
+print (cars)
+#getting back the original value
+cars.reverse()
+print (cars)
+
+#Finding the Length of a List
+#You can quickly find the length of a list by using the len() function.
+#NOTE: Python counts the items in a list starting with one, so you shouldn’t run into any off-by-one errors when determining the length of a list.
+print (len(cars))
+
+#Index errors
+lista = []
+#print (lista[-1]) #it will throw error.
