@@ -70,3 +70,17 @@ print (len(cars))
 #Index errors
 lista = []
 #print (lista[-1]) #it will throw error.
+
+#Slicing
+#Note: You can include a third value in the brackets indicating a slice. If a third value is included, this tells Python how many items to skip between items in the specified range.
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+for player in players[:-2]:
+    print (player)
+
+#Copying a list
+#This [:] is necessary as otherwise it will not copy the values from the list to the new list.
+new_players = players [:]
+
+#This syntax actually tells Python to associate the new variable players with the list that is already associated with new_players, so now both variables point to the same list. As a result, when we add 'cannoli' to players, it will also appear in new_players
+new_players = players
+

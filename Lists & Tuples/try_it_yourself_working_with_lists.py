@@ -15,3 +15,6 @@ print (millions1)
 #4.7
 multiples_3 = [i*3 for i in range (1,11)]
 print (multiples_3)
+
+
+
