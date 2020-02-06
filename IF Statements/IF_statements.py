@@ -14,3 +14,20 @@ print (car == 'audi') #False as the vales are considered differents.
 if True:
     print ("Let's re-begin")
 
+
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+for topping in requested_toppings:
+    if topping == 'mushrooms':
+        print ('no mushroom')
+    else:
+        print (f"added {topping}")
+
+print ('Done')
+
+""" When the name of a list is used in an if statement, Python returns True if the list contains at least one item; an empty list evaluates to False."""
+
+test_list = [1]
+if test_list:
+    print ('in the test list')
+else:
+    print ('no items found')
