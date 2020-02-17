@@ -68,6 +68,22 @@ for value in favorite_languages.values():
 
 print ("------")
 
-#This approach pulls all the values from the dictionary without checking for repeats. That might work fine with a small number of values, but in a poll with a large number of respondents, this would result in a very repetitive list. 
+#This approach pulls all the values from the dictionary without checking for repeats. That might work fine with a small number of values, but in a poll with a large number of respondents, this would result in a very repetitive list. This approach is called as using the set theory.
+
+'''Nesting in the dictionaries'''
+
+alien_0 = {'color': 'green', 'points': 5}
+alien_1 = {'color': 'yellow', 'points': 10}
+alien_2 = {'color': 'red', 'points': 15}
+
+aliens = [alien_0, alien_1, alien_2]
+for alien in aliens:
+    print (alien)
+
+
+
+
+
+
 
 

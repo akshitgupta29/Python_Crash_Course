@@ -19,10 +19,21 @@ favorite_languages = {
 
 to_takes = ['Akshit', 'Shrestha', 'Jen', 'Sarah']
 
-for to_take in to_takes:
-    if to_take.title() in favorite_languages.keys():
-        print (f"{to_take}, thanks!")
-    else:
-        print (f"{to_take}, please take the poll")
+# for to_take in to_takes:
+#     if to_take.title() in favorite_languages.keys():
+#         print (f"{to_take}, thanks!")
+#     else:
+#         print (f"{to_take}, please take the poll")
 
-#Reason why this code will not work as expected, is that we are expecting as the value is different than
+#Reason why this code will not work as expected, is that we are expecting as the value is different i.e in different case, hence the issues are there. So, we need to convert the whole text to the title case in the dictionary and then do the run competition.
+
+#To convert the text into the title case.
+favorite_languages = {k.title():v for k,v in favorite_languages.items()}
+
+#Now writing the program as per the logic:
+
+for to_take in to_takes:
+    if to_take.title() in favorite_languages:
+        print (f"{to_take}, Thanks!")
+    else:
+        print (f"{to_take}, kindly take the test!")
